@@ -1,7 +1,9 @@
 #root {
   max-width: 1280px;
-  padding: 2rem;
-
+  height: 100%;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #4B0082, #0000FF);
+  height: 140vh;
  
 }
 
@@ -10,13 +12,14 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #4B0082, #0000FF);
+  
   height: 100vh;
 }
 form {
   border: 3px solid #f1f1f1;
   width: 50%;
   margin-left: 25%;
+  
 
 }
 
@@ -62,7 +65,7 @@ button:hover {
 
 /* Avatar image */
 img.avatar {
-  width: 40%;
+  width: 20%;
   border-radius: 50%;
 }
 

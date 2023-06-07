@@ -13,7 +13,7 @@ function App() {
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
       "Password must be at least 8 characters long, and contain at least one uppercase letter, one lowercase letter, one number, and one special character"
     ),
-    confirpassword: yup.string().oneOf([yup.ref("password"), null], "Password must match").required("Confirm password is required")
+    confirmpassword: yup.string().oneOf([yup.ref("password"), null], "Password must match").required("Confirm password is required")
   })
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(Schema)
